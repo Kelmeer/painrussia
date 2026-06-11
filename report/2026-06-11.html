@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Отчёт 2026-06-11</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#1e1e2e;color:#e2e0f0;font-family:'Segoe UI',sans-serif;min-height:100vh}
+  header{background:#2a2a3e;padding:20px 32px;border-bottom:2px solid #7c6af7;
+          display:flex;align-items:center;gap:16px}
+  header h1{font-size:1.4rem;font-weight:700;color:#e2e0f0}
+  header .badge{background:#7c6af7;color:#fff;border-radius:20px;
+                 padding:4px 14px;font-size:.85rem;font-weight:600}
+  .meta{padding:12px 32px;color:#6e6c8a;font-size:.85rem}
+  .meta span{color:#a78bfa;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+         gap:16px;padding:24px 32px}
+  .card{background:#2a2a3e;border-radius:10px;overflow:hidden;cursor:pointer;
+         border:2px solid transparent;transition:.2s}
+  .card:hover{border-color:#7c6af7;transform:translateY(-3px);
+               box-shadow:0 8px 24px #7c6af740}
+  .card img{width:100%;height:160px;object-fit:cover;display:block}
+  .card-title{padding:8px 10px;font-size:.78rem;color:#6e6c8a;
+               white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  /* Lightbox */
+  #lb{display:none;position:fixed;inset:0;background:#000c;z-index:9999;
+       align-items:center;justify-content:center;flex-direction:column}
+  #lb.active{display:flex}
+  #lb img{max-width:92vw;max-height:82vh;border-radius:8px;
+           box-shadow:0 0 60px #7c6af760}
+  #lb-title{margin-top:12px;color:#e2e0f0;font-size:.9rem}
+  #lb-close{position:fixed;top:20px;right:28px;font-size:2rem;color:#e2e0f0;
+             cursor:pointer;background:none;border:none;line-height:1}
+  #lb-prev,#lb-next{position:fixed;top:50%;transform:translateY(-50%);
+                     font-size:2.5rem;color:#e2e0f0;cursor:pointer;
+                     background:none;border:none;line-height:1;padding:0 16px}
+  #lb-prev{left:8px} #lb-next{right:8px}
+  footer{text-align:center;padding:24px;color:#3a3a52;font-size:.78rem}
+</style>
+</head>
+<body>
+<header>
+  <div>📸</div>
+  <h1>Спонсорские скриншоты</h1>
+  <div class="badge">10 файлов</div>
+</header>
+<div class="meta">Дата: <span>2026-06-11</span> &nbsp;·&nbsp;
+Источник: <span>C:\Users\Kemal\KIRO\ScreenShoter\screen\sponsor</span></div>
+<div class="grid">
+        <div class="card" onclick="openLightbox('https://i.ibb.co/sdz0ZhV5/screenshot-2026-06-11-05-04-07-338.webp','screenshot 2026 06 11 05 04 07 338')">
+          <img src="https://i.ibb.co/xtdpNy7m/screenshot-2026-06-11-05-04-07-338.webp" alt="screenshot 2026 06 11 05 04 07 338" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 04 07 338</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/s9Vynwc9/screenshot-2026-06-11-05-05-28-525.webp','screenshot 2026 06 11 05 05 28 525')">
+          <img src="https://i.ibb.co/VYq2RSbY/screenshot-2026-06-11-05-05-28-525.webp" alt="screenshot 2026 06 11 05 05 28 525" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 05 28 525</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/ymzCyJrs/screenshot-2026-06-11-05-05-49-218.webp','screenshot 2026 06 11 05 05 49 218')">
+          <img src="https://i.ibb.co/SDkgnpzv/screenshot-2026-06-11-05-05-49-218.webp" alt="screenshot 2026 06 11 05 05 49 218" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 05 49 218</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/G4tZFwyc/screenshot-2026-06-11-05-06-30-140.webp','screenshot 2026 06 11 05 06 30 140')">
+          <img src="https://i.ibb.co/Q3CWXBLr/screenshot-2026-06-11-05-06-30-140.webp" alt="screenshot 2026 06 11 05 06 30 140" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 06 30 140</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/RJZHWYH/screenshot-2026-06-11-05-06-50-836.webp','screenshot 2026 06 11 05 06 50 836')">
+          <img src="https://i.ibb.co/TNph5Yh/screenshot-2026-06-11-05-06-50-836.webp" alt="screenshot 2026 06 11 05 06 50 836" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 06 50 836</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/NdTvWj79/screenshot-2026-06-11-05-07-11-592.webp','screenshot 2026 06 11 05 07 11 592')">
+          <img src="https://i.ibb.co/S4fjVnJt/screenshot-2026-06-11-05-07-11-592.webp" alt="screenshot 2026 06 11 05 07 11 592" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 07 11 592</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/9HPbcSXc/screenshot-2026-06-11-05-09-13-097.webp','screenshot 2026 06 11 05 09 13 097')">
+          <img src="https://i.ibb.co/nMp76t26/screenshot-2026-06-11-05-09-13-097.webp" alt="screenshot 2026 06 11 05 09 13 097" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 09 13 097</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/x8tjTtCp/screenshot-2026-06-11-05-10-14-174.webp','screenshot 2026 06 11 05 10 14 174')">
+          <img src="https://i.ibb.co/Qj3Nw3b2/screenshot-2026-06-11-05-10-14-174.webp" alt="screenshot 2026 06 11 05 10 14 174" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 10 14 174</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/k6kvPHP0/screenshot-2026-06-11-05-13-39-136.webp','screenshot 2026 06 11 05 13 39 136')">
+          <img src="https://i.ibb.co/CsNDS1Sv/screenshot-2026-06-11-05-13-39-136.webp" alt="screenshot 2026 06 11 05 13 39 136" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 05 13 39 136</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/LhbWJhPW/screenshot-2026-06-11-13-11-15-873.webp','screenshot 2026 06 11 13 11 15 873')">
+          <img src="https://i.ibb.co/XkNg3k4g/screenshot-2026-06-11-13-11-15-873.webp" alt="screenshot 2026 06 11 13 11 15 873" loading="lazy">
+          <div class="card-title">screenshot 2026 06 11 13 11 15 873</div>
+        </div>
+</div>
+<div id="lb">
+  <button id="lb-close" onclick="closeLb()">✕</button>
+  <button id="lb-prev"  onclick="moveLb(-1)">‹</button>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-title"></div>
+  <button id="lb-next"  onclick="moveLb(1)">›</button>
+</div>
+<footer>Сгенерировано автоматически · 2026-06-11 14:24</footer>
+<script>
+const items=[{"url": "https://i.ibb.co/sdz0ZhV5/screenshot-2026-06-11-05-04-07-338.webp", "thumb": "https://i.ibb.co/xtdpNy7m/screenshot-2026-06-11-05-04-07-338.webp", "display_url": "https://i.ibb.co/67L3k2Wv/screenshot-2026-06-11-05-04-07-338.webp", "delete_url": "https://ibb.co/xtdpNy7m/880f7c47c3dae1c9a108467532eb9245", "title": "screenshot 2026 06 11 05 04 07 338"}, {"url": "https://i.ibb.co/s9Vynwc9/screenshot-2026-06-11-05-05-28-525.webp", "thumb": "https://i.ibb.co/VYq2RSbY/screenshot-2026-06-11-05-05-28-525.webp", "display_url": "https://i.ibb.co/4RVPzTCR/screenshot-2026-06-11-05-05-28-525.webp", "delete_url": "https://ibb.co/VYq2RSbY/a512c6c2485c6f1621cf75c0b9761d60", "title": "screenshot 2026 06 11 05 05 28 525"}, {"url": "https://i.ibb.co/ymzCyJrs/screenshot-2026-06-11-05-05-49-218.webp", "thumb": "https://i.ibb.co/SDkgnpzv/screenshot-2026-06-11-05-05-49-218.webp", "display_url": "https://i.ibb.co/0p0LM3xJ/screenshot-2026-06-11-05-05-49-218.webp", "delete_url": "https://ibb.co/SDkgnpzv/462633c2548d0034f120da8f5df12b6c", "title": "screenshot 2026 06 11 05 05 49 218"}, {"url": "https://i.ibb.co/G4tZFwyc/screenshot-2026-06-11-05-06-30-140.webp", "thumb": "https://i.ibb.co/Q3CWXBLr/screenshot-2026-06-11-05-06-30-140.webp", "display_url": "https://i.ibb.co/1tdCbV18/screenshot-2026-06-11-05-06-30-140.webp", "delete_url": "https://ibb.co/Q3CWXBLr/8b316c88a2339cc91e6847e70585677d", "title": "screenshot 2026 06 11 05 06 30 140"}, {"url": "https://i.ibb.co/RJZHWYH/screenshot-2026-06-11-05-06-50-836.webp", "thumb": "https://i.ibb.co/TNph5Yh/screenshot-2026-06-11-05-06-50-836.webp", "display_url": "https://i.ibb.co/kPkcF5c/screenshot-2026-06-11-05-06-50-836.webp", "delete_url": "https://ibb.co/TNph5Yh/e2f5a6f25a0b1e53865fa65a2884d34c", "title": "screenshot 2026 06 11 05 06 50 836"}, {"url": "https://i.ibb.co/NdTvWj79/screenshot-2026-06-11-05-07-11-592.webp", "thumb": "https://i.ibb.co/S4fjVnJt/screenshot-2026-06-11-05-07-11-592.webp", "display_url": "https://i.ibb.co/Zp2jc8NB/screenshot-2026-06-11-05-07-11-592.webp", "delete_url": "https://ibb.co/S4fjVnJt/fd5c7da13231bff6611da909f7128623", "title": "screenshot 2026 06 11 05 07 11 592"}, {"url": "https://i.ibb.co/9HPbcSXc/screenshot-2026-06-11-05-09-13-097.webp", "thumb": "https://i.ibb.co/nMp76t26/screenshot-2026-06-11-05-09-13-097.webp", "display_url": "https://i.ibb.co/hF0BLw5L/screenshot-2026-06-11-05-09-13-097.webp", "delete_url": "https://ibb.co/nMp76t26/a6b578f06dd33a7d3c129df619ed7659", "title": "screenshot 2026 06 11 05 09 13 097"}, {"url": "https://i.ibb.co/x8tjTtCp/screenshot-2026-06-11-05-10-14-174.webp", "thumb": "https://i.ibb.co/Qj3Nw3b2/screenshot-2026-06-11-05-10-14-174.webp", "display_url": "https://i.ibb.co/5xg8HgMN/screenshot-2026-06-11-05-10-14-174.webp", "delete_url": "https://ibb.co/Qj3Nw3b2/117455798a9cb1030e3ff439b3990bf9", "title": "screenshot 2026 06 11 05 10 14 174"}, {"url": "https://i.ibb.co/k6kvPHP0/screenshot-2026-06-11-05-13-39-136.webp", "thumb": "https://i.ibb.co/CsNDS1Sv/screenshot-2026-06-11-05-13-39-136.webp", "display_url": "https://i.ibb.co/WpqjRxRF/screenshot-2026-06-11-05-13-39-136.webp", "delete_url": "https://ibb.co/CsNDS1Sv/11d9973b9f7a81d539754e8491824333", "title": "screenshot 2026 06 11 05 13 39 136"}, {"url": "https://i.ibb.co/LhbWJhPW/screenshot-2026-06-11-13-11-15-873.webp", "thumb": "https://i.ibb.co/XkNg3k4g/screenshot-2026-06-11-13-11-15-873.webp", "display_url": "https://i.ibb.co/FqNM0qWM/screenshot-2026-06-11-13-11-15-873.webp", "delete_url": "https://ibb.co/XkNg3k4g/bd98d6c719e12c489f626f939d6da54a", "title": "screenshot 2026 06 11 13 11 15 873"}];
+let cur=0;
+function openLightbox(url,title){
+  cur=items.findIndex(i=>i.url===url);
+  show();
+}
+function show(){
+  const lb=document.getElementById('lb');
+  lb.classList.add('active');
+  document.getElementById('lb-img').src=items[cur].url;
+  document.getElementById('lb-title').textContent=items[cur].title;
+}
+function closeLb(){document.getElementById('lb').classList.remove('active')}
+function moveLb(d){cur=(cur+d+items.length)%items.length;show()}
+document.getElementById('lb').addEventListener('click',function(e){
+  if(e.target===this)closeLb();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')moveLb(-1);
+  if(e.key==='ArrowRight')moveLb(1);
+});
+</script>
+</body>
+</html>
