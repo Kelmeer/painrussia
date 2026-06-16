@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Отчёт 2026-06-16</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#1e1e2e;color:#e2e0f0;font-family:'Segoe UI',sans-serif;min-height:100vh}
+  header{background:#2a2a3e;padding:20px 32px;border-bottom:2px solid #7c6af7;
+          display:flex;align-items:center;gap:16px}
+  header h1{font-size:1.4rem;font-weight:700;color:#e2e0f0}
+  header .badge{background:#7c6af7;color:#fff;border-radius:20px;
+                 padding:4px 14px;font-size:.85rem;font-weight:600}
+  .meta{padding:12px 32px;color:#6e6c8a;font-size:.85rem}
+  .meta span{color:#a78bfa;font-weight:600}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+         gap:16px;padding:24px 32px}
+  .card{background:#2a2a3e;border-radius:10px;overflow:hidden;cursor:pointer;
+         border:2px solid transparent;transition:.2s}
+  .card:hover{border-color:#7c6af7;transform:translateY(-3px);
+               box-shadow:0 8px 24px #7c6af740}
+  .card img{width:100%;height:160px;object-fit:cover;display:block}
+  .card-title{padding:8px 10px;font-size:.78rem;color:#6e6c8a;
+               white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  /* Lightbox */
+  #lb{display:none;position:fixed;inset:0;background:#000c;z-index:9999;
+       align-items:center;justify-content:center;flex-direction:column}
+  #lb.active{display:flex}
+  #lb img{max-width:92vw;max-height:82vh;border-radius:8px;
+           box-shadow:0 0 60px #7c6af760}
+  #lb-title{margin-top:12px;color:#e2e0f0;font-size:.9rem}
+  #lb-close{position:fixed;top:20px;right:28px;font-size:2rem;color:#e2e0f0;
+             cursor:pointer;background:none;border:none;line-height:1}
+  #lb-prev,#lb-next{position:fixed;top:50%;transform:translateY(-50%);
+                     font-size:2.5rem;color:#e2e0f0;cursor:pointer;
+                     background:none;border:none;line-height:1;padding:0 16px}
+  #lb-prev{left:8px} #lb-next{right:8px}
+  footer{text-align:center;padding:24px;color:#3a3a52;font-size:.78rem}
+</style>
+</head>
+<body>
+<header>
+  <div>📸</div>
+  <h1>Спонсорские скриншоты</h1>
+  <div class="badge">9 файлов</div>
+</header>
+<div class="meta">Дата: <span>2026-06-16</span> &nbsp;·&nbsp;
+Источник: <span>C:\Users\Kemal\KIRO\ScreenShoter\dist\screen\sponsor</span></div>
+<div class="grid">
+        <div class="card" onclick="openLightbox('https://i.ibb.co/8ZNvfWH/screenshot-2026-06-16-17-51-53-299.webp','screenshot 2026 06 16 17 51 53 299')">
+          <img src="https://i.ibb.co/trQjv79/screenshot-2026-06-16-17-51-53-299.webp" alt="screenshot 2026 06 16 17 51 53 299" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 17 51 53 299</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/C3xxHgP2/screenshot-2026-06-16-19-13-47-414.webp','screenshot 2026 06 16 19 13 47 414')">
+          <img src="https://i.ibb.co/5gqqRmKF/screenshot-2026-06-16-19-13-47-414.webp" alt="screenshot 2026 06 16 19 13 47 414" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 13 47 414</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/YFnpMgJF/screenshot-2026-06-16-19-14-48-957.webp','screenshot 2026 06 16 19 14 48 957')">
+          <img src="https://i.ibb.co/fz645JZz/screenshot-2026-06-16-19-14-48-957.webp" alt="screenshot 2026 06 16 19 14 48 957" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 14 48 957</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/rfLchJgW/screenshot-2026-06-16-19-15-19-660.webp','screenshot 2026 06 16 19 15 19 660')">
+          <img src="https://i.ibb.co/R4MBKW15/screenshot-2026-06-16-19-15-19-660.webp" alt="screenshot 2026 06 16 19 15 19 660" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 15 19 660</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/VWTsYMck/screenshot-2026-06-16-19-15-50-488.webp','screenshot 2026 06 16 19 15 50 488')">
+          <img src="https://i.ibb.co/fYHsdrzT/screenshot-2026-06-16-19-15-50-488.webp" alt="screenshot 2026 06 16 19 15 50 488" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 15 50 488</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/60j4s52K/screenshot-2026-06-16-19-16-21-268.webp','screenshot 2026 06 16 19 16 21 268')">
+          <img src="https://i.ibb.co/ZzqhTC3Q/screenshot-2026-06-16-19-16-21-268.webp" alt="screenshot 2026 06 16 19 16 21 268" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 16 21 268</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/d4Xsqq9n/screenshot-2026-06-16-19-16-52-080.webp','screenshot 2026 06 16 19 16 52 080')">
+          <img src="https://i.ibb.co/RTtGmmnL/screenshot-2026-06-16-19-16-52-080.webp" alt="screenshot 2026 06 16 19 16 52 080" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 16 52 080</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/pBckQGrB/screenshot-2026-06-16-19-17-22-794.webp','screenshot 2026 06 16 19 17 22 794')">
+          <img src="https://i.ibb.co/RkfJNZ4k/screenshot-2026-06-16-19-17-22-794.webp" alt="screenshot 2026 06 16 19 17 22 794" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 17 22 794</div>
+        </div>
+        <div class="card" onclick="openLightbox('https://i.ibb.co/84MhkrSt/screenshot-2026-06-16-19-17-53-465.webp','screenshot 2026 06 16 19 17 53 465')">
+          <img src="https://i.ibb.co/tPBdRqWF/screenshot-2026-06-16-19-17-53-465.webp" alt="screenshot 2026 06 16 19 17 53 465" loading="lazy">
+          <div class="card-title">screenshot 2026 06 16 19 17 53 465</div>
+        </div>
+</div>
+<div id="lb">
+  <button id="lb-close" onclick="closeLb()">✕</button>
+  <button id="lb-prev"  onclick="moveLb(-1)">‹</button>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-title"></div>
+  <button id="lb-next"  onclick="moveLb(1)">›</button>
+</div>
+<footer>Сгенерировано автоматически · 2026-06-16 19:52</footer>
+<script>
+const items=[{"url": "https://i.ibb.co/8ZNvfWH/screenshot-2026-06-16-17-51-53-299.webp", "thumb": "https://i.ibb.co/trQjv79/screenshot-2026-06-16-17-51-53-299.webp", "display_url": "https://i.ibb.co/H8BwbWj/screenshot-2026-06-16-17-51-53-299.webp", "delete_url": "https://ibb.co/trQjv79/c6074d627e42cae69b0d89cc17532050", "title": "screenshot 2026 06 16 17 51 53 299"}, {"url": "https://i.ibb.co/C3xxHgP2/screenshot-2026-06-16-19-13-47-414.webp", "thumb": "https://i.ibb.co/5gqqRmKF/screenshot-2026-06-16-19-13-47-414.webp", "display_url": "https://i.ibb.co/KpCCrdKw/screenshot-2026-06-16-19-13-47-414.webp", "delete_url": "https://ibb.co/5gqqRmKF/723ff0507a5a207837a269bdc6306f45", "title": "screenshot 2026 06 16 19 13 47 414"}, {"url": "https://i.ibb.co/YFnpMgJF/screenshot-2026-06-16-19-14-48-957.webp", "thumb": "https://i.ibb.co/fz645JZz/screenshot-2026-06-16-19-14-48-957.webp", "display_url": "https://i.ibb.co/mVZ6wpdV/screenshot-2026-06-16-19-14-48-957.webp", "delete_url": "https://ibb.co/fz645JZz/619b1fdc7b836fb8c320d4b6e053681d", "title": "screenshot 2026 06 16 19 14 48 957"}, {"url": "https://i.ibb.co/rfLchJgW/screenshot-2026-06-16-19-15-19-660.webp", "thumb": "https://i.ibb.co/R4MBKW15/screenshot-2026-06-16-19-15-19-660.webp", "display_url": "https://i.ibb.co/qF4W8wzZ/screenshot-2026-06-16-19-15-19-660.webp", "delete_url": "https://ibb.co/R4MBKW15/1c7303f5030f4c7d8fe8483664ae2711", "title": "screenshot 2026 06 16 19 15 19 660"}, {"url": "https://i.ibb.co/VWTsYMck/screenshot-2026-06-16-19-15-50-488.webp", "thumb": "https://i.ibb.co/fYHsdrzT/screenshot-2026-06-16-19-15-50-488.webp", "display_url": "https://i.ibb.co/zhZzVPTt/screenshot-2026-06-16-19-15-50-488.webp", "delete_url": "https://ibb.co/fYHsdrzT/adb797fc176508732504cfadae386139", "title": "screenshot 2026 06 16 19 15 50 488"}, {"url": "https://i.ibb.co/60j4s52K/screenshot-2026-06-16-19-16-21-268.webp", "thumb": "https://i.ibb.co/ZzqhTC3Q/screenshot-2026-06-16-19-16-21-268.webp", "display_url": "https://i.ibb.co/jknL4FdC/screenshot-2026-06-16-19-16-21-268.webp", "delete_url": "https://ibb.co/ZzqhTC3Q/f36274593139825fc8805546b90ee667", "title": "screenshot 2026 06 16 19 16 21 268"}, {"url": "https://i.ibb.co/d4Xsqq9n/screenshot-2026-06-16-19-16-52-080.webp", "thumb": "https://i.ibb.co/RTtGmmnL/screenshot-2026-06-16-19-16-52-080.webp", "display_url": "https://i.ibb.co/v4fCGG52/screenshot-2026-06-16-19-16-52-080.webp", "delete_url": "https://ibb.co/RTtGmmnL/b63bf8536ceb8918b7e93992af29f385", "title": "screenshot 2026 06 16 19 16 52 080"}, {"url": "https://i.ibb.co/pBckQGrB/screenshot-2026-06-16-19-17-22-794.webp", "thumb": "https://i.ibb.co/RkfJNZ4k/screenshot-2026-06-16-19-17-22-794.webp", "display_url": "https://i.ibb.co/v6pMhgv6/screenshot-2026-06-16-19-17-22-794.webp", "delete_url": "https://ibb.co/RkfJNZ4k/e8316591be85190091f710a76c64571f", "title": "screenshot 2026 06 16 19 17 22 794"}, {"url": "https://i.ibb.co/84MhkrSt/screenshot-2026-06-16-19-17-53-465.webp", "thumb": "https://i.ibb.co/tPBdRqWF/screenshot-2026-06-16-19-17-53-465.webp", "display_url": "https://i.ibb.co/JFnhZvMg/screenshot-2026-06-16-19-17-53-465.webp", "delete_url": "https://ibb.co/tPBdRqWF/5908df7ae87401bd017163962459566f", "title": "screenshot 2026 06 16 19 17 53 465"}];
+let cur=0;
+function openLightbox(url,title){
+  cur=items.findIndex(i=>i.url===url);
+  show();
+}
+function show(){
+  const lb=document.getElementById('lb');
+  lb.classList.add('active');
+  document.getElementById('lb-img').src=items[cur].url;
+  document.getElementById('lb-title').textContent=items[cur].title;
+}
+function closeLb(){document.getElementById('lb').classList.remove('active')}
+function moveLb(d){cur=(cur+d+items.length)%items.length;show()}
+document.getElementById('lb').addEventListener('click',function(e){
+  if(e.target===this)closeLb();
+});
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')moveLb(-1);
+  if(e.key==='ArrowRight')moveLb(1);
+});
+</script>
+</body>
+</html>
